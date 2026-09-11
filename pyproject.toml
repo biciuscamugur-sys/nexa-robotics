@@ -1,0 +1,19 @@
+NEXA.  [build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexa-robotics"
+version = "0.1.0"
+description = "NEXA Robotics — open-source autonomous robotics platform"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "NEXA Robotics"}
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
